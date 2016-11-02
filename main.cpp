@@ -1,6 +1,5 @@
 #include <SDL.h>
-#include "sudoku/sudoku.h"
-#include "15puzzle/source/puzzle15.h"
+#include "8puzzle/source/puzzle8.h"
 #include "maze/MAZE.h"
 #include "animations/animations.h"
 #include <SDL_ttf.h>
@@ -127,10 +126,7 @@ int main(int argc, char **argv)
                 if(event.key.keysym.scancode == SDL_SCANCODE_S)
                 {
 
-                    SUDOKU *sudoku;
-                    sudoku = new SUDOKU(renderer);
-                    sudoku->Run();
-                    delete sudoku;
+
 
                 }
                 if(event.key.keysym.scancode == SDL_SCANCODE_M)

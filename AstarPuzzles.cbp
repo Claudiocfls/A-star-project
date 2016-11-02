@@ -2,22 +2,21 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="teste" />
+		<Option title="AstarPuzzles" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/teste" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/AstarPuzzles" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option use_console_runner="0" />
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/teste" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/AstarPuzzles" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -32,8 +31,8 @@
 		<Compiler>
 			<Add option="-std=c++11" />
 			<Add option="-Wall" />
-			<Add directory="$(#sdl2.include)/SDL2" />
-			<Add directory="../../Devs/libs/SDL2_ttf-2.0.14/i686-w64-mingw32/include/SDL2" />
+			<Add directory="../../../Devs/libs/SDL2-2.0.4/i686-w64-mingw32/include/SDL2" />
+			<Add directory="../../../Devs/libs/SDL2_ttf-2.0.14/i686-w64-mingw32/include/SDL2" />
 		</Compiler>
 		<Linker>
 			<Add library="mingw32" />
@@ -41,16 +40,14 @@
 			<Add library="SDL2" />
 			<Add library="SDL2_ttf" />
 			<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW" />
-			<Add directory="$(#sdl2.lib)" />
-			<Add directory="$(#sdl2.bin)" />
-			<Add directory="../../Devs/libs/SDL2_ttf-2.0.14/i686-w64-mingw32/lib" />
-			<Add directory="../../Devs/libs/SDL2_ttf-2.0.14/i686-w64-mingw32/bin" />
+			<Add directory="../../../Devs/libs/SDL2-2.0.4/i686-w64-mingw32/lib" />
+			<Add directory="../../../Devs/libs/SDL2-2.0.4/i686-w64-mingw32/bin" />
+			<Add directory="../../../Devs/libs/SDL2_ttf-2.0.14/i686-w64-mingw32/lib" />
+			<Add directory="../../../Devs/libs/SDL2_ttf-2.0.14/i686-w64-mingw32/bin" />
 		</Linker>
-		<Unit filename="15puzzle/source/puzzle15.h">
-			<Option compile="1" />
-		</Unit>
-		<Unit filename="15puzzle/source/tabuleiro15puzzle.h" />
-		<Unit filename="15puzzle/source/tree.h" />
+		<Unit filename="8puzzle/source/puzzle8.h" />
+		<Unit filename="8puzzle/source/tabuleiro15puzzle.h" />
+		<Unit filename="8puzzle/source/tree.h" />
 		<Unit filename="animations/animations.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="maze/MAZE.h" />
@@ -58,14 +55,10 @@
 		<Unit filename="resource.rc">
 			<Option compilerVar="WINDRES" />
 		</Unit>
-		<Unit filename="sudoku/sudoku.h" />
-		<Unit filename="sudoku/tabuleiro.h" />
-		<Unit filename="sudoku/validacao.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
 			<debugger />
-			<lib_finder disable_auto="1" />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
